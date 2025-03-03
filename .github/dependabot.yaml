@@ -5,6 +5,10 @@ updates:
     schedule:
       interval: weekly
   - package-ecosystem: bundler
+    directory: /working
+    schedule:
+      interval: weekly
+  - package-ecosystem: bundler
     directory: /grouped
     schedule:
       interval: weekly
