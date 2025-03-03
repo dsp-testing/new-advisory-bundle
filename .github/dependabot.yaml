@@ -1,6 +1,16 @@
 version: 2
 updates:
   - package-ecosystem: bundler
-    directory: /
+    directory: /single
     schedule:
       interval: weekly
+  - package-ecosystem: bundler
+    directory: /grouped
+    schedule:
+      interval: weekly
+    groups:
+      test:
+        applies-to: version-updates
+        patterns:
+          - business
+          - statesman
